@@ -7,12 +7,13 @@
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { resolve, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
 
-const ROOT = resolve(dirname(import.meta.url.replace("file:///", "")), "..");
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const CLIENT_MD = resolve(ROOT, "CLIENT.md");
 const OUTPUT = resolve(ROOT, "src/config/client.config.ts");
 
