@@ -10,28 +10,28 @@
 // ============================================================
 
 /** Hero generique — heroes blog, avis-clients, contact, a-propos, realisations + section cta-bandeau */
-const HERO_GENERIQUE = "/images/heroes/generique-batiment.png";
+const HERO_GENERIQUE = "/images/heroes/generique-batiment.jpeg";
 
 /** Hero maconnerie + page maconnerie-fondations */
-const IMG_MACONNERIE_HERO = "/images/heroes/maconnerie.png";
+const IMG_MACONNERIE_HERO = "/images/heroes/maconnerie.jpeg";
 
 /** Hero ravalement + page ravalement-enduit */
 const IMG_RAVALEMENT = "/images/heroes/ravalement-facades.jpeg";
 
 /** Hero extension + hero amenagement + realisation surelevation-after */
-const IMG_EXTENSION = "/images/heroes/extension-surelevation.png";
+const IMG_EXTENSION = "/images/heroes/extension-surelevation.jpeg";
 
 /** Hero renovation interieure */
 const IMG_RENOVATION_INT = "/images/heroes/renovation-interieure.jpeg";
 
 /** Facade degradee — urgence-card + realisation facade-ravalement-before */
-const IMG_FACADE_DEGRADEE = "/images/realisations/facade-ravalement-before.png";
+const IMG_FACADE_DEGRADEE = "/images/realisations/facade-ravalement-before.jpeg";
 
 // ============================================================
 // Hero pages (11 emplacements → 6 images uniques)
 // ============================================================
 export const heroImages: Record<string, string> = {
-  "accueil":                "/images/heroes/accueil.png",
+  "accueil":                "/images/heroes/accueil.jpeg",
   "maconnerie":             IMG_MACONNERIE_HERO,
   "ravalement-facades":     IMG_RAVALEMENT,
   "extension-surelevation": IMG_EXTENSION,
@@ -68,21 +68,21 @@ export const pageImages: Record<string, string> = {
   // Ravalement (4 sous-sections distinctes)
   "ravalement-enduit":              IMG_RAVALEMENT,
   "ravalement-nettoyage":           IMG_FACADE_DEGRADEE,
-  "ravalement-peinture":            "/images/pages/ravalement-ite.png",
+  "ravalement-peinture":            "/images/pages/ravalement-ite.jpeg",
   "ravalement-ite":                 "/images/pages/travaux-isolation.jpeg",
   // Extension (4 sous-sections distinctes)
   "extension-maison":               IMG_EXTENSION,
-  "extension-ossature-bois":        "/images/realisations/extension-maison-after.png",
-  "extension-surelevation-toiture": "/images/pages/extension-surelevation-toiture.png",
+  "extension-ossature-bois":        "/images/realisations/extension-maison-after.jpeg",
+  "extension-surelevation-toiture": "/images/pages/extension-surelevation-toiture.jpeg",
   "extension-veranda":              "/images/pages/extension-conception-plans.jpeg",
   // Renovation interieure (4 sous-sections distinctes)
-  "renovation-cloisons":            "/images/pages/renovation-cuisine-ouverte.png",
+  "renovation-cloisons":            "/images/pages/renovation-cuisine-ouverte.jpeg",
   "renovation-carrelage":           "/images/pages/renovation-douche-carrelage.jpeg",
-  "renovation-peinture":            "/images/pages/renovation-salon-finitions.png",
-  "renovation-complete":            "/images/pages/renovation-bureau.png",
+  "renovation-peinture":            "/images/pages/renovation-salon-finitions.jpeg",
+  "renovation-complete":            "/images/pages/renovation-bureau.jpeg",
   // Amenagement exterieur (5 sous-sections distinctes)
-  "amenagement-terrasse":           "/images/pages/terrasse-moderne.png",
-  "amenagement-cloture":            "/images/realisations/facade-ravalement-after.png",
+  "amenagement-terrasse":           "/images/pages/terrasse-moderne.jpeg",
+  "amenagement-cloture":            "/images/realisations/facade-ravalement-after.jpeg",
   "amenagement-murets":             "/images/realisations/surelevation-toiture-before.jpeg",
   "amenagement-allees":             "/images/realisations/renovation-appart-after.jpeg",
   "amenagement-vrd":                "/images/realisations/renovation-appart-before.jpeg",
@@ -93,12 +93,12 @@ export const pageImages: Record<string, string> = {
 // ============================================================
 export const realisationImages: Record<string, string> = {
   "facade-ravalement-before":         IMG_FACADE_DEGRADEE,
-  "facade-ravalement-after":          "/images/realisations/facade-ravalement-after.png",
-  "extension-maison-before":          "/images/realisations/extension-maison-before.png",
-  "extension-maison-after":           "/images/realisations/extension-maison-after.png",
+  "facade-ravalement-after":          "/images/realisations/facade-ravalement-after.jpeg",
+  "extension-maison-before":          "/images/realisations/extension-maison-before.jpeg",
+  "extension-maison-after":           "/images/realisations/extension-maison-after.jpeg",
   "renovation-appart-before":         "/images/realisations/renovation-appart-before.jpeg",
   "renovation-appart-after":          "/images/realisations/renovation-appart-after.jpeg",
-  "carrelage-salon-before":           "/images/realisations/carrelage-salon-before.png",
+  "carrelage-salon-before":           "/images/realisations/carrelage-salon-before.jpeg",
   "carrelage-salon-after":            "/images/pages/renovation-carrelage.jpeg",
   "ouverture-mur-before":             "/images/realisations/ouverture-mur-before.jpeg",
   "ouverture-mur-after":              "/images/realisations/ouverture-mur-after.jpeg",
