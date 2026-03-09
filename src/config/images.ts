@@ -10,34 +10,34 @@
 // ============================================================
 
 /** Hero generique — heroes blog, avis-clients, contact, a-propos, realisations + section cta-bandeau */
-const HERO_GENERIQUE = "/images/heroes/generique-batiment.jpeg";
+const HERO_GENERIQUE = "/images/heroes/generique-batiment.png";
 
 /** Hero maconnerie + page maconnerie-fondations */
-const IMG_MACONNERIE_HERO = "/images/heroes/maconnerie.jpeg";
+const IMG_MACONNERIE_HERO = "/images/heroes/maconnerie.png";
 
 /** Hero ravalement + page ravalement-enduit + realisation facade-after */
 const IMG_RAVALEMENT = "/images/heroes/ravalement-facades.jpeg";
 
 /** Hero extension + hero amenagement + page extension-maison + page amenagement-terrasse + realisation surelevation-after */
-const IMG_EXTENSION = "/images/heroes/extension-surelevation.jpeg";
+const IMG_EXTENSION = "/images/heroes/extension-surelevation.png";
 
 /** Hero renovation interieure + page renovation-complete */
 const IMG_RENOVATION_INT = "/images/heroes/renovation-interieure.jpeg";
 
 /** Facade degradee — urgence-card + realisation facade-ravalement-before */
-const IMG_FACADE_DEGRADEE = "/images/realisations/facade-ravalement-before.jpeg";
+const IMG_FACADE_DEGRADEE = "/images/realisations/facade-ravalement-before.png";
 
 /** Ouverture mur apres — page renovation-cloisons + realisation ouverture-mur-after */
 const IMG_OUVERTURE_APRES = "/images/realisations/ouverture-mur-after.jpeg";
 
 /** Ouverture mur avant — page maconnerie-murs-porteurs + realisation ouverture-mur-before */
-const IMG_OUVERTURE_AVANT = "/images/realisations/ouverture-mur-before.png";
+const IMG_OUVERTURE_AVANT = "/images/realisations/ouverture-mur-before.jpeg";
 
 // ============================================================
 // Hero pages (11 emplacements → 6 images uniques)
 // ============================================================
 export const heroImages: Record<string, string> = {
-  "accueil":                "/images/heroes/accueil.jpeg",
+  "accueil":                "/images/heroes/accueil.png",
   "maconnerie":             IMG_MACONNERIE_HERO,
   "ravalement-facades":     IMG_RAVALEMENT,
   "extension-surelevation": IMG_EXTENSION,
@@ -72,17 +72,17 @@ export const pageImages: Record<string, string> = {
   "maconnerie-ouvertures":          "/images/pages/maconnerie-ouvertures.jpeg",
   // Ravalement
   "ravalement-enduit":              IMG_RAVALEMENT,
-  "ravalement-ite":                 "/images/pages/ravalement-ite.jpeg",
+  "ravalement-ite":                 "/images/pages/ravalement-ite.png",
   // Extension
   "extension-maison":               IMG_EXTENSION,
-  "extension-surelevation-toiture": "/images/pages/extension-surelevation-toiture.jpeg",
+  "extension-surelevation-toiture": "/images/pages/extension-surelevation-toiture.png",
   // Renovation interieure
   "renovation-cloisons":            IMG_OUVERTURE_APRES,
   "renovation-carrelage":           "/images/pages/renovation-carrelage.jpeg",
   "renovation-complete":            IMG_RENOVATION_INT,
   // Amenagement exterieur
   "amenagement-terrasse":           IMG_EXTENSION,
-  "amenagement-cloture":            "/images/pages/ravalement-ite.jpeg",
+  "amenagement-cloture":            "/images/pages/ravalement-ite.png",
 };
 
 // ============================================================
@@ -92,13 +92,13 @@ export const realisationImages: Record<string, string> = {
   "facade-ravalement-before":         IMG_FACADE_DEGRADEE,
   "facade-ravalement-after":          "/images/realisations/facade-ravalement-after.png",
   "extension-maison-before":          "/images/realisations/extension-maison-before.png",
-  "extension-maison-after":           "/images/realisations/extension-maison-after.jpeg",
+  "extension-maison-after":           "/images/realisations/extension-maison-after.png",
   "renovation-appart-before":         "/images/realisations/renovation-appart-before.jpeg",
-  "renovation-appart-after":          "/images/realisations/renovation-appart-after.png",
+  "renovation-appart-after":          "/images/realisations/renovation-appart-after.jpeg",
   "carrelage-salon-before":           "/images/realisations/carrelage-salon-before.png",
   "carrelage-salon-after":            "/images/pages/renovation-carrelage.jpeg",
   "ouverture-mur-before":             IMG_OUVERTURE_AVANT,
   "ouverture-mur-after":              IMG_OUVERTURE_APRES,
-  "surelevation-toiture-before":      "/images/realisations/surelevation-toiture-before.png",
+  "surelevation-toiture-before":      "/images/realisations/surelevation-toiture-before.jpeg",
   "surelevation-toiture-after":       IMG_EXTENSION,
 };
