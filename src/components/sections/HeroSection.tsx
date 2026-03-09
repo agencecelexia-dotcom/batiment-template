@@ -156,7 +156,7 @@ export function HeroSection({
 
   if (variant === "page") {
     return (
-      <section className="relative py-16 md:py-20">
+      <section className="relative py-24 md:py-32">
         <div className="absolute inset-0">
           <ImagePlaceholder
             prompt={imagePlaceholder.prompt}
@@ -170,11 +170,11 @@ export function HeroSection({
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/75 to-black/80 z-10" />
         <div className="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight">
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
             {title}
           </h1>
           {subtitle && (
-            <p className="mt-4 text-lg text-neutral-300 max-w-2xl mx-auto">
+            <p className="mt-6 text-lg md:text-xl text-neutral-300 max-w-2xl mx-auto">
               {subtitle}
             </p>
           )}
