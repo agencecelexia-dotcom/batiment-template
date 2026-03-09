@@ -12,7 +12,7 @@ async function checkAuth(): Promise<boolean> {
 
 export async function POST(request: Request) {
   if (!(await checkAuth())) {
-    return NextResponse.json({ error: "Non autoris\u00e9" }, { status: 401 });
+    return NextResponse.json({ error: "Non autorisé" }, { status: 401 });
   }
 
   try {

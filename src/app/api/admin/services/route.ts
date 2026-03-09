@@ -12,14 +12,14 @@ async function checkAuth() {
 
 export async function GET() {
   if (!(await checkAuth()))
-    return NextResponse.json({ error: "Non autoris\u00e9" }, { status: 401 });
+    return NextResponse.json({ error: "Non autorisé" }, { status: 401 });
   const data = readData(FILE, defaultServices);
   return NextResponse.json({ success: true, data });
 }
 
 export async function POST(request: NextRequest) {
   if (!(await checkAuth()))
-    return NextResponse.json({ error: "Non autoris\u00e9" }, { status: 401 });
+    return NextResponse.json({ error: "Non autorisé" }, { status: 401 });
   const body = await request.json();
   const items = readData(FILE, defaultServices) as typeof defaultServices;
 

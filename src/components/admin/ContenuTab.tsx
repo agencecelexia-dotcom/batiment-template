@@ -169,12 +169,12 @@ export default function ContenuTab() {
       if (!res.ok) throw new Error("Erreur serveur");
       setToast({
         type: "success",
-        message: "Contenu sauvegard\u00e9 avec succ\u00e8s !",
+        message: "Contenu sauvegardé avec succès !",
       });
     } catch {
       setToast({
         type: "error",
-        message: "Erreur lors de la sauvegarde. R\u00e9essayez.",
+        message: "Erreur lors de la sauvegarde. Réessayez.",
       });
     } finally {
       setSaving(false);
@@ -220,23 +220,23 @@ export default function ContenuTab() {
         </div>
       )}
 
-      <Section title="Identit\u00e9">
+      <Section title="Identité">
         <Field label="Nom de l'entreprise" fieldKey="NOM_ENTREPRISE" fields={fields} onChange={handleChange} />
-        <Field label="Nom l\u00e9gal" fieldKey="NOM_LEGAL" fields={fields} onChange={handleChange} />
-        <Field label="Pr\u00e9nom du dirigeant" fieldKey="PRENOM_DIRIGEANT" fields={fields} onChange={handleChange} />
+        <Field label="Nom légal" fieldKey="NOM_LEGAL" fields={fields} onChange={handleChange} />
+        <Field label="Prénom du dirigeant" fieldKey="PRENOM_DIRIGEANT" fields={fields} onChange={handleChange} />
         <Field label="Nom du dirigeant" fieldKey="NOM_DIRIGEANT" fields={fields} onChange={handleChange} />
-        <Field label="Genre (masculin/f\u00e9minin)" fieldKey="GENRE_DIRIGEANT" fields={fields} onChange={handleChange} />
+        <Field label="Genre (masculin/féminin)" fieldKey="GENRE_DIRIGEANT" fields={fields} onChange={handleChange} />
       </Section>
 
       <Section title="Contact">
-        <Field label="T\u00e9l\u00e9phone" fieldKey="TELEPHONE" fields={fields} onChange={handleChange} />
-        <Field label="T\u00e9l\u00e9phone urgence" fieldKey="TELEPHONE_URGENCE" fields={fields} onChange={handleChange} />
+        <Field label="Téléphone" fieldKey="TELEPHONE" fields={fields} onChange={handleChange} />
+        <Field label="Téléphone urgence" fieldKey="TELEPHONE_URGENCE" fields={fields} onChange={handleChange} />
         <Field label="Email" fieldKey="EMAIL" fields={fields} onChange={handleChange} />
         <Field label="Adresse" fieldKey="ADRESSE" fields={fields} onChange={handleChange} />
         <Field label="Code postal" fieldKey="CODE_POSTAL" fields={fields} onChange={handleChange} />
         <Field label="Ville" fieldKey="VILLE" fields={fields} onChange={handleChange} />
-        <Field label="D\u00e9partement" fieldKey="DEPARTEMENT" fields={fields} onChange={handleChange} />
-        <Field label="R\u00e9gion" fieldKey="REGION" fields={fields} onChange={handleChange} />
+        <Field label="Département" fieldKey="DEPARTEMENT" fields={fields} onChange={handleChange} />
+        <Field label="Région" fieldKey="REGION" fields={fields} onChange={handleChange} />
         <Field label="Zone d'intervention (km)" fieldKey="ZONE_KM" fields={fields} onChange={handleChange} />
       </Section>
 
@@ -254,27 +254,27 @@ export default function ContenuTab() {
         <Field label="Meta description accueil" fieldKey="META_DESC_ACCUEIL" fields={fields} onChange={handleChange} fullWidth />
       </Section>
 
-      <Section title="R\u00e9seaux sociaux">
+      <Section title="Réseaux sociaux">
         <Field label="Facebook URL" fieldKey="FACEBOOK_URL" fields={fields} onChange={handleChange} />
         <Field label="Instagram URL" fieldKey="INSTAGRAM_URL" fields={fields} onChange={handleChange} />
         <Field label="Google Business URL" fieldKey="GOOGLE_URL" fields={fields} onChange={handleChange} />
         <Field label="Domaine" fieldKey="DOMAINE" fields={fields} onChange={handleChange} />
       </Section>
 
-      <Section title="L\u00e9gal">
+      <Section title="Légal">
         <Field label="SIRET" fieldKey="SIRET" fields={fields} onChange={handleChange} />
         <Field label="RGE" fieldKey="RGE" fields={fields} onChange={handleChange} />
-        <Field label="Assurance d\u00e9cennale" fieldKey="ASSURANCE_DECENNALE" fields={fields} onChange={handleChange} />
+        <Field label="Assurance décennale" fieldKey="ASSURANCE_DECENNALE" fields={fields} onChange={handleChange} />
       </Section>
 
-      <Section title="Chiffres cl\u00e9s">
-        <Field label="Ann\u00e9es d'exp\u00e9rience" fieldKey="ANNEES_EXPERIENCE" fields={fields} onChange={handleChange} />
+      <Section title="Chiffres clés">
+        <Field label="Années d'expérience" fieldKey="ANNEES_EXPERIENCE" fields={fields} onChange={handleChange} />
         <Field label="Nombre d'interventions" fieldKey="NOMBRE_INTERVENTIONS" fields={fields} onChange={handleChange} />
         <Field label="Note Google" fieldKey="NOTE_GOOGLE" fields={fields} onChange={handleChange} />
         <Field label="Nombre d'avis" fieldKey="NOMBRE_AVIS" fields={fields} onChange={handleChange} />
-        <Field label="Ann\u00e9e de cr\u00e9ation" fieldKey="ANNEE_CREATION" fields={fields} onChange={handleChange} />
-        <Field label="D\u00e9lai d'intervention" fieldKey="DELAI_INTERVENTION" fields={fields} onChange={handleChange} />
-        <Field label="Disponibilit\u00e9" fieldKey="DISPONIBILITE" fields={fields} onChange={handleChange} />
+        <Field label="Année de création" fieldKey="ANNEE_CREATION" fields={fields} onChange={handleChange} />
+        <Field label="Délai d'intervention" fieldKey="DELAI_INTERVENTION" fields={fields} onChange={handleChange} />
+        <Field label="Disponibilité" fieldKey="DISPONIBILITE" fields={fields} onChange={handleChange} />
         <Field label="Taux de satisfaction" fieldKey="TAUX_SATISFACTION" fields={fields} onChange={handleChange} />
       </Section>
 

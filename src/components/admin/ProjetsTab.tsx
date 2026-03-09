@@ -33,18 +33,18 @@ interface ProjectForm {
 }
 
 const CATEGORIES = [
-  { value: "Ma\u00e7onnerie", label: "Ma\u00e7onnerie" },
+  { value: "Maçonnerie", label: "Maçonnerie" },
   { value: "Ravalement", label: "Ravalement" },
   { value: "Extension", label: "Extension" },
-  { value: "R\u00e9novation", label: "R\u00e9novation" },
-  { value: "Am\u00e9nagement", label: "Am\u00e9nagement" },
+  { value: "Rénovation", label: "Rénovation" },
+  { value: "Aménagement", label: "Aménagement" },
 ];
 
 function slugify(str: string) {
   return str
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
@@ -52,7 +52,7 @@ function slugify(str: string) {
 const EMPTY_FORM: ProjectForm = {
   slug: "",
   title: "",
-  category: "Ma\u00e7onnerie",
+  category: "Maçonnerie",
   location: "",
   year: new Date().getFullYear(),
   shortDescription: "",
@@ -193,9 +193,9 @@ export default function ProjetsTab() {
             <thead>
               <tr className="border-b border-neutral-100 bg-neutral-50 text-left">
                 <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500">Titre</th>
-                <th className="hidden px-4 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500 sm:table-cell">Cat\u00e9gorie</th>
+                <th className="hidden px-4 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500 sm:table-cell">Catégorie</th>
                 <th className="hidden px-4 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500 md:table-cell">Lieu</th>
-                <th className="hidden px-4 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500 md:table-cell">Ann\u00e9e</th>
+                <th className="hidden px-4 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500 md:table-cell">Année</th>
                 <th className="px-4 py-3 text-center text-xs font-semibold uppercase tracking-wide text-neutral-500">Mis en avant</th>
                 <th className="w-28 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-500">Actions</th>
               </tr>
@@ -255,12 +255,12 @@ export default function ProjetsTab() {
                 <input type="text" value={form.title} onChange={(e) => handleTitleChange(e.target.value)} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" placeholder="Titre du projet" />
               </div>
               <div>
-                <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Slug <span className="font-normal normal-case text-neutral-400">(auto-g\u00e9n\u00e9r\u00e9)</span></label>
+                <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Slug <span className="font-normal normal-case text-neutral-400">(auto-généré)</span></label>
                 <input type="text" value={form.slug} onChange={(e) => setForm((f) => ({ ...f, slug: e.target.value }))} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 font-mono text-sm focus:border-primary-900 focus:outline-none" />
               </div>
               <div className="grid grid-cols-3 gap-4">
                 <div>
-                  <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Cat\u00e9gorie</label>
+                  <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Catégorie</label>
                   <select value={form.category} onChange={(e) => setForm((f) => ({ ...f, category: e.target.value }))} className="w-full rounded-lg border border-neutral-200 bg-white px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none">
                     {CATEGORIES.map((c) => (<option key={c.value} value={c.value}>{c.label}</option>))}
                   </select>
@@ -270,7 +270,7 @@ export default function ProjetsTab() {
                   <input type="text" value={form.location} onChange={(e) => setForm((f) => ({ ...f, location: e.target.value }))} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" placeholder="Centre-ville" />
                 </div>
                 <div>
-                  <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Ann\u00e9e</label>
+                  <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Année</label>
                   <input type="number" value={form.year} onChange={(e) => setForm((f) => ({ ...f, year: parseInt(e.target.value) || f.year }))} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" />
                 </div>
               </div>
@@ -279,7 +279,7 @@ export default function ProjetsTab() {
                 <textarea value={form.shortDescription} onChange={(e) => setForm((f) => ({ ...f, shortDescription: e.target.value }))} rows={2} className="w-full resize-y rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" />
               </div>
               <div>
-                <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Description compl\u00e8te</label>
+                <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Description complète</label>
                 <textarea value={form.fullDescription} onChange={(e) => setForm((f) => ({ ...f, fullDescription: e.target.value }))} rows={3} className="w-full resize-y rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" />
               </div>
               <div>
@@ -292,7 +292,7 @@ export default function ProjetsTab() {
                   <input type="text" value={form.beforeImage} onChange={(e) => setForm((f) => ({ ...f, beforeImage: e.target.value }))} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 font-mono text-sm focus:border-primary-900 focus:outline-none" />
                 </div>
                 <div>
-                  <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Image apr\u00e8s</label>
+                  <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Image après</label>
                   <input type="text" value={form.afterImage} onChange={(e) => setForm((f) => ({ ...f, afterImage: e.target.value }))} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 font-mono text-sm focus:border-primary-900 focus:outline-none" />
                 </div>
               </div>
@@ -321,7 +321,7 @@ export default function ProjetsTab() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
           <div className="w-full max-w-sm rounded-2xl bg-white p-6 shadow-2xl">
             <h3 className="mb-2 font-heading text-lg font-bold text-neutral-900">Supprimer ce projet ?</h3>
-            <p className="mb-6 text-sm text-neutral-500">Cette action est irr\u00e9versible.</p>
+            <p className="mb-6 text-sm text-neutral-500">Cette action est irréversible.</p>
             <div className="flex gap-3">
               <button onClick={() => setDeleteId(null)} className="flex-1 rounded-lg border border-neutral-200 px-4 py-2.5 text-sm font-medium text-neutral-700 hover:bg-neutral-50">Annuler</button>
               <button onClick={handleDelete} disabled={deleting} className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-red-600 px-4 py-2.5 text-sm font-medium text-white hover:opacity-90 disabled:opacity-50">

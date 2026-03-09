@@ -134,8 +134,8 @@ export default function TemoignagesTab() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="font-heading text-3xl font-bold text-neutral-900">T\u00e9moignages</h1>
-          <p className="mt-1 text-neutral-500">{items.length} t\u00e9moignage{items.length !== 1 ? "s" : ""}</p>
+          <h1 className="font-heading text-3xl font-bold text-neutral-900">Témoignages</h1>
+          <p className="mt-1 text-neutral-500">{items.length} témoignage{items.length !== 1 ? "s" : ""}</p>
         </div>
         <button
           onClick={openAdd}
@@ -152,7 +152,7 @@ export default function TemoignagesTab() {
         </div>
       ) : items.length === 0 ? (
         <div className="rounded-xl border border-dashed border-neutral-300 bg-white p-12 text-center">
-          <p className="text-neutral-500">Aucun t\u00e9moignage. Ajoutez-en un !</p>
+          <p className="text-neutral-500">Aucun témoignage. Ajoutez-en un !</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -195,7 +195,7 @@ export default function TemoignagesTab() {
           <div className="max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-white shadow-2xl">
             <div className="flex items-center justify-between border-b border-neutral-100 px-6 py-5">
               <h3 className="font-heading text-xl font-bold text-neutral-900">
-                {editItem ? "Modifier le t\u00e9moignage" : "Ajouter un t\u00e9moignage"}
+                {editItem ? "Modifier le témoignage" : "Ajouter un témoignage"}
               </h3>
               <button onClick={closeModal} className="flex h-8 w-8 items-center justify-center rounded-lg text-neutral-400 hover:bg-neutral-100">
                 <X size={18} />
@@ -207,12 +207,12 @@ export default function TemoignagesTab() {
                 <input type="text" value={form.clientName} onChange={(e) => setForm((f) => ({ ...f, clientName: e.target.value }))} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" placeholder="Marie Dupont" />
               </div>
               <div>
-                <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Localisation / R\u00f4le</label>
-                <input type="text" value={form.clientRole} onChange={(e) => setForm((f) => ({ ...f, clientRole: e.target.value }))} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" placeholder="Propri\u00e9taire \u00e0 {VILLE}" />
+                <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Localisation / Rôle</label>
+                <input type="text" value={form.clientRole} onChange={(e) => setForm((f) => ({ ...f, clientRole: e.target.value }))} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" placeholder="Propriétaire à {VILLE}" />
               </div>
               <div>
-                <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">T\u00e9moignage</label>
-                <textarea value={form.quote} onChange={(e) => setForm((f) => ({ ...f, quote: e.target.value }))} rows={4} className="w-full resize-y rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" placeholder="Leur exp\u00e9rience avec votre entreprise..." />
+                <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Témoignage</label>
+                <textarea value={form.quote} onChange={(e) => setForm((f) => ({ ...f, quote: e.target.value }))} rows={4} className="w-full resize-y rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" placeholder="Leur expérience avec votre entreprise..." />
               </div>
               <div>
                 <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Note</label>
@@ -221,7 +221,7 @@ export default function TemoignagesTab() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Type de projet</label>
-                  <input type="text" value={form.projectType} onChange={(e) => setForm((f) => ({ ...f, projectType: e.target.value }))} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" placeholder="Ma\u00e7onnerie" />
+                  <input type="text" value={form.projectType} onChange={(e) => setForm((f) => ({ ...f, projectType: e.target.value }))} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" placeholder="Maçonnerie" />
                 </div>
                 <div>
                   <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Date (AAAA-MM)</label>
@@ -243,8 +243,8 @@ export default function TemoignagesTab() {
       {deleteId && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
           <div className="w-full max-w-sm rounded-2xl bg-white p-6 shadow-2xl">
-            <h3 className="mb-2 font-heading text-lg font-bold text-neutral-900">Supprimer ce t\u00e9moignage ?</h3>
-            <p className="mb-6 text-sm text-neutral-500">Cette action est irr\u00e9versible.</p>
+            <h3 className="mb-2 font-heading text-lg font-bold text-neutral-900">Supprimer ce témoignage ?</h3>
+            <p className="mb-6 text-sm text-neutral-500">Cette action est irréversible.</p>
             <div className="flex gap-3">
               <button onClick={() => setDeleteId(null)} className="flex-1 rounded-lg border border-neutral-200 px-4 py-2.5 text-sm font-medium text-neutral-700 hover:bg-neutral-50">Annuler</button>
               <button onClick={handleDelete} disabled={deleting} className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-red-600 px-4 py-2.5 text-sm font-medium text-white hover:opacity-90 disabled:opacity-50">

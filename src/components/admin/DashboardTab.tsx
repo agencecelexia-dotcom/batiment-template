@@ -15,7 +15,7 @@ import {
   Percent,
 } from "lucide-react";
 
-type SubmissionStatus = "Nouveau" | "Contact\u00e9" | "En cours" | "Converti";
+type SubmissionStatus = "Nouveau" | "Contacté" | "En cours" | "Converti";
 
 interface Submission {
   id: string;
@@ -37,7 +37,7 @@ const INITIAL_SUBMISSIONS: Submission[] = [
     name: "Marie Dupont",
     email: "marie.dupont@email.fr",
     phone: "06 12 34 56 78",
-    service: "Ma\u00e7onnerie",
+    service: "Maçonnerie",
     subject: "Fissures mur porteur maison",
     message:
       "Bonjour, j'ai des fissures importantes sur un mur porteur de ma maison. Pouvez-vous venir faire un diagnostic et me proposer une solution de reprise ?",
@@ -52,13 +52,13 @@ const INITIAL_SUBMISSIONS: Submission[] = [
     email: "martin.pierre@gmail.com",
     phone: "06 98 76 54 32",
     service: "Extension",
-    subject: "Extension maison 25m\u00b2",
+    subject: "Extension maison 25m²",
     message:
-      "Nous souhaiterions r\u00e9aliser une extension de 25m\u00b2 \u00e0 l'arri\u00e8re de notre maison pour cr\u00e9er une suite parentale. Budget pr\u00e9vu : 45 000\u20ac.",
+      "Nous souhaiterions réaliser une extension de 25m² à l'arrière de notre maison pour créer une suite parentale. Budget prévu : 45 000€.",
     location: "{COMMUNE_1}",
     date: "20/02/2026",
     time: "14:45",
-    status: "Contact\u00e9",
+    status: "Contacté",
   },
   {
     id: "3",
@@ -66,9 +66,9 @@ const INITIAL_SUBMISSIONS: Submission[] = [
     email: "m.faure@orange.fr",
     phone: "07 23 45 67 89",
     service: "Ravalement",
-    subject: "Ravalement fa\u00e7ade immeuble",
+    subject: "Ravalement façade immeuble",
     message:
-      "Je suis syndic d'un immeuble de 3 \u00e9tages. Nous recherchons un devis pour le ravalement complet des fa\u00e7ades avec isolation thermique par l'ext\u00e9rieur.",
+      "Je suis syndic d'un immeuble de 3 étages. Nous recherchons un devis pour le ravalement complet des façades avec isolation thermique par l'extérieur.",
     location: "{COMMUNE_2}",
     date: "19/02/2026",
     time: "09:15",
@@ -79,10 +79,10 @@ const INITIAL_SUBMISSIONS: Submission[] = [
     name: "Isabelle Petit",
     email: "isabelle.petit@sfr.fr",
     phone: "06 34 56 78 90",
-    service: "R\u00e9novation",
-    subject: "R\u00e9novation compl\u00e8te appartement 80m\u00b2",
+    service: "Rénovation",
+    subject: "Rénovation complète appartement 80m²",
     message:
-      "Je viens d'acqu\u00e9rir un appartement de 80m\u00b2 \u00e0 r\u00e9nover enti\u00e8rement : d\u00e9molition cloisons, cr\u00e9ation pi\u00e8ces, \u00e9lectricit\u00e9, plomberie, sols et peinture.",
+      "Je viens d'acquérir un appartement de 80m² à rénover entièrement : démolition cloisons, création pièces, électricité, plomberie, sols et peinture.",
     location: "{VILLE}",
     date: "18/02/2026",
     time: "16:30",
@@ -93,10 +93,10 @@ const INITIAL_SUBMISSIONS: Submission[] = [
     name: "Jean-Marc Reynaud",
     email: "jm.reynaud@free.fr",
     phone: "06 45 67 89 01",
-    service: "Am\u00e9nagement ext\u00e9rieur",
-    subject: "Terrasse b\u00e9ton + cl\u00f4ture",
+    service: "Aménagement extérieur",
+    subject: "Terrasse béton + clôture",
     message:
-      "Je souhaite faire r\u00e9aliser une terrasse en b\u00e9ton d\u00e9sactiv\u00e9 de 40m\u00b2 et une cl\u00f4ture en parpaing avec enduit sur 30m lin\u00e9aires.",
+      "Je souhaite faire réaliser une terrasse en béton désactivé de 40m² et une clôture en parpaing avec enduit sur 30m linéaires.",
     location: "{VILLE}",
     date: "17/02/2026",
     time: "11:00",
@@ -117,11 +117,11 @@ const FAKE_STATS = {
   conversionRate: "1.7%",
   topPages: [
     { page: "/", label: "Accueil", views: 1284 },
-    { page: "/maconnerie", label: "Ma\u00e7onnerie", views: 643 },
+    { page: "/maconnerie", label: "Maçonnerie", views: 643 },
     { page: "/ravalement-facades", label: "Ravalement", views: 521 },
     { page: "/contact", label: "Contact", views: 389 },
     { page: "/extension-surelevation", label: "Extension", views: 234 },
-    { page: "/realisations", label: "R\u00e9alisations", views: 170 },
+    { page: "/realisations", label: "Réalisations", views: 170 },
   ],
   topReferrers: [
     { source: "Google organic", visits: 1456, pct: "67%" },
@@ -134,7 +134,7 @@ const FAKE_STATS = {
 
 const STATUS_COLORS: Record<SubmissionStatus, string> = {
   Nouveau: "bg-blue-100 text-blue-700",
-  "Contact\u00e9": "bg-yellow-100 text-yellow-700",
+  "Contacté": "bg-yellow-100 text-yellow-700",
   "En cours": "bg-orange-100 text-orange-700",
   Converti: "bg-green-100 text-green-700",
 };
@@ -177,7 +177,7 @@ export default function DashboardTab() {
             Tableau de bord
           </h1>
           <p className="mt-1 text-neutral-500">
-            Vue d&apos;ensemble de votre activit\u00e9
+            Vue d&apos;ensemble de votre activité
           </p>
         </div>
         <button
@@ -229,7 +229,7 @@ export default function DashboardTab() {
         <div className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white p-4 shadow-sm">
           <Clock size={18} className="flex-shrink-0 text-neutral-400" />
           <div>
-            <p className="text-xs text-neutral-500">Dur\u00e9e moy. session</p>
+            <p className="text-xs text-neutral-500">Durée moy. session</p>
             <p className="text-lg font-bold text-neutral-900">
               {stats.avgSessionDuration}
             </p>
@@ -259,7 +259,7 @@ export default function DashboardTab() {
       <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm">
         <div className="border-b border-neutral-100 px-6 py-4">
           <h2 className="font-heading text-lg font-semibold text-neutral-900">
-            Demandes r\u00e9centes
+            Demandes récentes
           </h2>
         </div>
         <div className="overflow-x-auto">
@@ -315,7 +315,7 @@ export default function DashboardTab() {
                       className={`cursor-pointer rounded-full border-0 px-2.5 py-1 text-xs font-medium ${STATUS_COLORS[s.status]}`}
                     >
                       <option value="Nouveau">Nouveau</option>
-                      <option value="Contact\u00e9">Contact\u00e9</option>
+                      <option value="Contacté">Contacté</option>
                       <option value="En cours">En cours</option>
                       <option value="Converti">Converti</option>
                     </select>
@@ -332,7 +332,7 @@ export default function DashboardTab() {
         <div className="overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-sm">
           <div className="border-b border-neutral-100 px-6 py-4">
             <h2 className="font-heading text-base font-semibold text-neutral-900">
-              Pages les plus visit\u00e9es
+              Pages les plus visitées
             </h2>
           </div>
           <div className="divide-y divide-neutral-100">
@@ -402,7 +402,7 @@ export default function DashboardTab() {
                   {selectedSubmission.name}
                 </h3>
                 <p className="text-sm text-neutral-500">
-                  {selectedSubmission.location} — {selectedSubmission.date} \u00e0{" "}
+                  {selectedSubmission.location} — {selectedSubmission.date} à{" "}
                   {selectedSubmission.time}
                 </p>
               </div>
@@ -455,7 +455,7 @@ export default function DashboardTab() {
                 </div>
                 <div>
                   <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-neutral-400">
-                    T\u00e9l\u00e9phone
+                    Téléphone
                   </p>
                   <p className="text-sm text-neutral-700">
                     {selectedSubmission.phone}
@@ -471,7 +471,7 @@ export default function DashboardTab() {
                   {(
                     [
                       "Nouveau",
-                      "Contact\u00e9",
+                      "Contacté",
                       "En cours",
                       "Converti",
                     ] as SubmissionStatus[]

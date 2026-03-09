@@ -22,7 +22,7 @@ function slugify(str: string) {
   return str
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
@@ -268,14 +268,14 @@ export default function ServicesTab() {
                   value={form.title}
                   onChange={(e) => handleTitleChange(e.target.value)}
                   className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none"
-                  placeholder="Ma\u00e7onnerie g\u00e9n\u00e9rale"
+                  placeholder="Maçonnerie générale"
                 />
               </div>
               <div>
                 <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">
                   Slug{" "}
                   <span className="font-normal normal-case text-neutral-400">
-                    (auto-g\u00e9n\u00e9r\u00e9)
+                    (auto-généré)
                   </span>
                 </label>
                 <input
@@ -305,7 +305,7 @@ export default function ServicesTab() {
               </div>
               <div>
                 <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">
-                  Description compl\u00e8te
+                  Description complète
                 </label>
                 <textarea
                   value={form.fullDescription}
@@ -321,7 +321,7 @@ export default function ServicesTab() {
               </div>
               <div>
                 <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">
-                  Caract\u00e9ristiques{" "}
+                  Caractéristiques{" "}
                   <span className="font-normal normal-case text-neutral-400">
                     (une par ligne)
                   </span>
@@ -334,13 +334,13 @@ export default function ServicesTab() {
                   rows={5}
                   className="w-full resize-y rounded-lg border border-neutral-200 px-3 py-2.5 font-mono text-sm focus:border-primary-900 focus:outline-none"
                   placeholder={
-                    "Devis gratuit\nGarantie d\u00e9cennale\nIntervention rapide"
+                    "Devis gratuit\nGarantie décennale\nIntervention rapide"
                   }
                 />
               </div>
               <div>
                 <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">
-                  Ic\u00f4ne (nom Lucide)
+                  Icône (nom Lucide)
                 </label>
                 <input
                   type="text"
@@ -380,7 +380,7 @@ export default function ServicesTab() {
               Supprimer ce service ?
             </h3>
             <p className="mb-6 text-sm text-neutral-500">
-              Cette action est irr\u00e9versible.
+              Cette action est irréversible.
             </p>
             <div className="flex gap-3">
               <button
