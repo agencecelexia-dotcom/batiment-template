@@ -61,10 +61,10 @@ export const pageImages: Record<string, string> = {
   "a-propos-fondateur":             "/images/pages/a-propos-dirigeant.jpeg",
   "a-propos-equipe":                "/images/pages/a-propos-equipe.jpeg",
   // Maconnerie (4 sous-sections distinctes)
-  "maconnerie-murs-porteurs":       "/images/realisations/ouverture-mur-before.jpeg",
-  "maconnerie-fondations":          IMG_MACONNERIE_HERO,
+  "maconnerie-murs-porteurs":       "/images/pages/maconnerie-mur-pierre.jpg",
+  "maconnerie-fondations":          "/images/realisations/renovation-appart-before.jpeg",
   "maconnerie-ouvertures":          "/images/pages/maconnerie-ouvertures.jpeg",
-  "maconnerie-reparations":         IMG_RENOVATION_INT,
+  "maconnerie-reparations":         "/images/realisations/ouverture-mur-before.jpeg",
   // Ravalement (4 sous-sections distinctes)
   "ravalement-enduit":              IMG_RAVALEMENT,
   "ravalement-nettoyage":           IMG_FACADE_DEGRADEE,
@@ -81,11 +81,11 @@ export const pageImages: Record<string, string> = {
   "renovation-peinture":            "/images/pages/renovation-salon-finitions.png",
   "renovation-complete":            "/images/pages/renovation-bureau.png",
   // Amenagement exterieur (5 sous-sections distinctes)
-  "amenagement-terrasse":           IMG_EXTENSION,
-  "amenagement-cloture":            "/images/pages/ravalement-ite.png",
-  "amenagement-murets":             "/images/realisations/facade-ravalement-after.png",
-  "amenagement-allees":             "/images/heroes/accueil.png",
-  "amenagement-vrd":                "/images/pages/amenagement-chantier-exterieur.jpeg",
+  "amenagement-terrasse":           "/images/pages/terrasse-moderne.png",
+  "amenagement-cloture":            "/images/realisations/facade-ravalement-after.png",
+  "amenagement-murets":             "/images/realisations/surelevation-toiture-before.jpeg",
+  "amenagement-allees":             "/images/realisations/renovation-appart-after.jpeg",
+  "amenagement-vrd":                "/images/realisations/renovation-appart-before.jpeg",
 };
 
 // ============================================================

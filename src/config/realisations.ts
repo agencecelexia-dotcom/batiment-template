@@ -29,15 +29,15 @@ export const realisations: Realisation[] = [
   },
   {
     id: "renovation-appart",
-    title: "Rénovation complète appartement",
-    category: "Rénovation intérieure",
+    title: "Construction de maison plain-pied",
+    category: "Maçonnerie",
     city: "{VILLE}",
     description:
-      "Rénovation intégrale d'un appartement de 65m² : démolition de cloisons, création d'un espace ouvert cuisine-salon, plâtrerie, carrelage et peinture.",
+      "Construction d'une maison individuelle de plain-pied sur terrain viabilisé : terrassement, fondations, élévation des murs, toiture, enduit de façade et allée d'accès.",
     beforePrompt:
-      "Intérieur d'appartement ancien, murs jaunis avec papier peint décollé, sol vinyle usé, cloisons étroites, luminosité faible, photo réaliste, ratio 4:3",
+      "Terrain nu viabilisé dans un lotissement, terre retournée avec traces d'engins, piquets de bornage, maisons voisines en arrière-plan, photo réaliste, ratio 4:3",
     afterPrompt:
-      "Appartement rénové, espace ouvert cuisine-salon lumineux, murs blancs lisses, parquet clair, cuisine ouverte avec îlot, spots encastrés, photo réaliste, ratio 4:3",
+      "Maison de plain-pied neuve enduit blanc, toiture tuiles, garage intégré, allée bitumée, pelouse fraîche, photo réaliste, ratio 4:3",
     aspectRatio: "4/3",
   },
   {
