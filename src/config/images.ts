@@ -15,23 +15,17 @@ const HERO_GENERIQUE = "/images/heroes/generique-batiment.png";
 /** Hero maconnerie + page maconnerie-fondations */
 const IMG_MACONNERIE_HERO = "/images/heroes/maconnerie.png";
 
-/** Hero ravalement + page ravalement-enduit + realisation facade-after */
+/** Hero ravalement + page ravalement-enduit */
 const IMG_RAVALEMENT = "/images/heroes/ravalement-facades.jpeg";
 
-/** Hero extension + hero amenagement + page extension-maison + page amenagement-terrasse + realisation surelevation-after */
+/** Hero extension + hero amenagement + realisation surelevation-after */
 const IMG_EXTENSION = "/images/heroes/extension-surelevation.png";
 
-/** Hero renovation interieure + page renovation-complete */
+/** Hero renovation interieure */
 const IMG_RENOVATION_INT = "/images/heroes/renovation-interieure.jpeg";
 
 /** Facade degradee — urgence-card + realisation facade-ravalement-before */
 const IMG_FACADE_DEGRADEE = "/images/realisations/facade-ravalement-before.png";
-
-/** Ouverture mur apres — page renovation-cloisons + realisation ouverture-mur-after */
-const IMG_OUVERTURE_APRES = "/images/realisations/ouverture-mur-after.jpeg";
-
-/** Ouverture mur avant — page maconnerie-murs-porteurs + realisation ouverture-mur-before */
-const IMG_OUVERTURE_AVANT = "/images/realisations/ouverture-mur-before.jpeg";
 
 // ============================================================
 // Hero pages (11 emplacements → 6 images uniques)
@@ -60,29 +54,38 @@ export const sectionImages: Record<string, string> = {
 };
 
 // ============================================================
-// Pages specifiques (12 emplacements → 8 images uniques)
+// Pages specifiques — chaque sous-section a sa propre image
 // ============================================================
 export const pageImages: Record<string, string> = {
   // A propos
-  "a-propos-fondateur":             "/images/pages/a-propos-fondateur.jpeg",
+  "a-propos-fondateur":             "/images/pages/a-propos-dirigeant.jpeg",
   "a-propos-equipe":                "/images/pages/a-propos-equipe.jpeg",
-  // Maconnerie
-  "maconnerie-murs-porteurs":       IMG_OUVERTURE_AVANT,
+  // Maconnerie (4 sous-sections distinctes)
+  "maconnerie-murs-porteurs":       "/images/realisations/ouverture-mur-before.jpeg",
   "maconnerie-fondations":          IMG_MACONNERIE_HERO,
   "maconnerie-ouvertures":          "/images/pages/maconnerie-ouvertures.jpeg",
-  // Ravalement
+  "maconnerie-reparations":         IMG_RENOVATION_INT,
+  // Ravalement (4 sous-sections distinctes)
   "ravalement-enduit":              IMG_RAVALEMENT,
-  "ravalement-ite":                 "/images/pages/ravalement-ite.png",
-  // Extension
+  "ravalement-nettoyage":           IMG_FACADE_DEGRADEE,
+  "ravalement-peinture":            "/images/pages/ravalement-ite.png",
+  "ravalement-ite":                 "/images/pages/travaux-isolation.jpeg",
+  // Extension (4 sous-sections distinctes)
   "extension-maison":               IMG_EXTENSION,
+  "extension-ossature-bois":        "/images/realisations/extension-maison-after.png",
   "extension-surelevation-toiture": "/images/pages/extension-surelevation-toiture.png",
-  // Renovation interieure
-  "renovation-cloisons":            IMG_OUVERTURE_APRES,
-  "renovation-carrelage":           "/images/pages/renovation-carrelage.jpeg",
-  "renovation-complete":            IMG_RENOVATION_INT,
-  // Amenagement exterieur
+  "extension-veranda":              "/images/pages/extension-conception-plans.jpeg",
+  // Renovation interieure (4 sous-sections distinctes)
+  "renovation-cloisons":            "/images/pages/renovation-cuisine-ouverte.png",
+  "renovation-carrelage":           "/images/pages/renovation-douche-carrelage.jpeg",
+  "renovation-peinture":            "/images/pages/renovation-salon-finitions.png",
+  "renovation-complete":            "/images/pages/renovation-bureau.png",
+  // Amenagement exterieur (5 sous-sections distinctes)
   "amenagement-terrasse":           IMG_EXTENSION,
   "amenagement-cloture":            "/images/pages/ravalement-ite.png",
+  "amenagement-murets":             "/images/realisations/facade-ravalement-after.png",
+  "amenagement-allees":             "/images/heroes/accueil.png",
+  "amenagement-vrd":                "/images/pages/amenagement-chantier-exterieur.jpeg",
 };
 
 // ============================================================
@@ -97,8 +100,8 @@ export const realisationImages: Record<string, string> = {
   "renovation-appart-after":          "/images/realisations/renovation-appart-after.jpeg",
   "carrelage-salon-before":           "/images/realisations/carrelage-salon-before.png",
   "carrelage-salon-after":            "/images/pages/renovation-carrelage.jpeg",
-  "ouverture-mur-before":             IMG_OUVERTURE_AVANT,
-  "ouverture-mur-after":              IMG_OUVERTURE_APRES,
+  "ouverture-mur-before":             "/images/realisations/ouverture-mur-before.jpeg",
+  "ouverture-mur-after":              "/images/realisations/ouverture-mur-after.jpeg",
   "surelevation-toiture-before":      "/images/realisations/surelevation-toiture-before.jpeg",
   "surelevation-toiture-after":       IMG_EXTENSION,
 };

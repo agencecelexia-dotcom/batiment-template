@@ -21,9 +21,9 @@ const solutionIcons = [Building2, TreePine, ArrowUpFromLine, Sun];
 
 const solutionImages: Record<string, { prompt: string; imageKey: string }> = {
   "Extension en parpaing": { prompt: "Extension maison en parpaing enduit blanc, grande baie vitree, toiture plate, raccord harmonieux avec maison existante, photo realiste, ratio 3:2", imageKey: "extension-maison" },
-  "Extension ossature bois": { prompt: "Extension maison ossature bois bardage bois naturel, grandes fenetres, design contemporain, jardin autour, photo realiste, ratio 3:2", imageKey: "extension-maison" },
+  "Extension ossature bois": { prompt: "Extension maison ossature bois bardage bois naturel, grandes fenetres, design contemporain, jardin autour, photo realiste, ratio 3:2", imageKey: "extension-ossature-bois" },
   "Surélévation de toiture": { prompt: "Maison en cours de surelevation, charpente bois neuve visible, echafaudage, toiture en construction, photo realiste, ratio 3:2", imageKey: "extension-surelevation-toiture" },
-  "Véranda & pergola": { prompt: "Veranda aluminium moderne accolee a maison, toiture vitree, salon amenage a l'interieur, lumiere naturelle, jardin visible, photo realiste, ratio 3:2", imageKey: "extension-maison" },
+  "Véranda & pergola": { prompt: "Veranda aluminium moderne accolee a maison, toiture vitree, salon amenage a l'interieur, lumiere naturelle, jardin visible, photo realiste, ratio 3:2", imageKey: "extension-veranda" },
 };
 
 const etapeIcons = [Search, FileCheck, ClipboardList, HardHat, PartyPopper];

@@ -23,7 +23,7 @@ const projetIcons = [LayoutGrid, Grid3X3, Paintbrush, Home];
 const projetImages: Record<string, { prompt: string; imageKey: string }> = {
   "Cloisons & plâtrerie": { prompt: "Artisan posant des plaques de platre sur ossature metallique, chantier interieur propre, visseuse en main, photo realiste, ratio 4:3", imageKey: "renovation-cloisons" },
   "Carrelage & faïence": { prompt: "Carreleur posant du carrelage grand format au sol, croisillons visibles, niveau a bulle, chantier interieur, photo realiste, ratio 4:3", imageKey: "renovation-carrelage" },
-  "Peinture & finitions": { prompt: "Peintre en batiment appliquant de la peinture blanche au rouleau sur mur interieur, bache de protection au sol, finition soignee, photo realiste, ratio 4:3", imageKey: "renovation-complete" },
+  "Peinture & finitions": { prompt: "Peintre en batiment appliquant de la peinture blanche au rouleau sur mur interieur, bache de protection au sol, finition soignee, photo realiste, ratio 4:3", imageKey: "renovation-peinture" },
   "Rénovation complète": { prompt: "Appartement en cours de renovation complete, murs neufs, sol en chape, electricien et plombier au travail, chantier organise, photo realiste, ratio 4:3", imageKey: "renovation-complete" },
 };
 

@@ -22,9 +22,9 @@ const serviceIcons = [TreePine, Fence, Landmark, Route, Shovel];
 const serviceImages: Record<string, { prompt: string; imageKey: string }> = {
   "Terrasse": { prompt: "Belle terrasse en bois composite gris clair, lames regulieres, salon de jardin, eclairage LED, maison moderne en arriere-plan, photo realiste, ratio 3:2", imageKey: "amenagement-terrasse" },
   "Clôture & portail": { prompt: "Cloture aluminium gris anthracite avec piliers enduits, portail coulissant motorise, jardin soigne, photo realiste, ratio 3:2", imageKey: "amenagement-cloture" },
-  "Murets & soutènement": { prompt: "Mur de soutenement en gabion pierre sur terrain en pente, jardin amenage en terrasses, photo realiste, ratio 3:2", imageKey: "amenagement-cloture" },
-  "Allées & cours": { prompt: "Allee carrossable en beton desactive ton beige, bordures en paves, garage en arriere-plan, finition soignee, photo realiste, ratio 3:2", imageKey: "amenagement-terrasse" },
-  "VRD & assainissement": { prompt: "Tranchee ouverte avec tuyaux PVC pour raccordement reseau, pelle mecanique en arriere-plan, chantier organise, photo realiste, ratio 3:2", imageKey: "amenagement-terrasse" },
+  "Murets & soutènement": { prompt: "Mur de soutenement en gabion pierre sur terrain en pente, jardin amenage en terrasses, photo realiste, ratio 3:2", imageKey: "amenagement-murets" },
+  "Allées & cours": { prompt: "Allee carrossable en beton desactive ton beige, bordures en paves, garage en arriere-plan, finition soignee, photo realiste, ratio 3:2", imageKey: "amenagement-allees" },
+  "VRD & assainissement": { prompt: "Tranchee ouverte avec tuyaux PVC pour raccordement reseau, pelle mecanique en arriere-plan, chantier organise, photo realiste, ratio 3:2", imageKey: "amenagement-vrd" },
 };
 
 const serviceLiesLinks: Record<string, string> = {

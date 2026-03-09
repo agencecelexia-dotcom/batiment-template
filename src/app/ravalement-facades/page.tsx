@@ -21,9 +21,9 @@ export const metadata: Metadata = generatePageMetadata({
 const prestationIcons = [SprayCan, PaintBucket, Paintbrush, ShieldCheck];
 
 const prestationImages: Record<string, { prompt: string; imageKey: string }> = {
-  "Nettoyage & traitement": { prompt: "Nettoyage haute pression facade maison, jet d'eau puissant sur mur enduit, professionnel en tenue de protection, photo realiste, ratio 3:2", imageKey: "ravalement-enduit" },
+  "Nettoyage & traitement": { prompt: "Nettoyage haute pression facade maison, jet d'eau puissant sur mur enduit, professionnel en tenue de protection, photo realiste, ratio 3:2", imageKey: "ravalement-nettoyage" },
   "Enduit & crépi": { prompt: "Artisan facadier appliquant un enduit monocouche sur facade maison, taloche en main, echafaudage, finition soignee, photo realiste, ratio 3:2", imageKey: "ravalement-enduit" },
-  "Peinture de façade": { prompt: "Peintre en batiment sur echafaudage peignant une facade de maison en blanc, rouleau large, protection au sol, photo realiste, ratio 3:2", imageKey: "ravalement-enduit" },
+  "Peinture de façade": { prompt: "Peintre en batiment sur echafaudage peignant une facade de maison en blanc, rouleau large, protection au sol, photo realiste, ratio 3:2", imageKey: "ravalement-peinture" },
   "Isolation thermique (ITE)": { prompt: "Pose de panneaux isolants polystyrene sur facade exterieure maison, artisan sur echafaudage, chevilles de fixation visibles, photo realiste, ratio 3:2", imageKey: "ravalement-ite" },
 };
 

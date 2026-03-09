@@ -23,7 +23,7 @@ const serviceImages: Record<string, { prompt: string; imageKey: string }> = {
   "Murs porteurs & cloisons": { prompt: "Artisan macon montant un mur en parpaing, alignement au cordeau, chantier propre, lumiere naturelle, photo realiste, ratio 3:2", imageKey: "maconnerie-murs-porteurs" },
   "Fondations & dalles": { prompt: "Coulage de dalle beton sur chantier de construction, armatures visibles, camion toupie, photo realiste, ratio 3:2", imageKey: "maconnerie-fondations" },
   "Ouvertures & agrandissements": { prompt: "Ouverture dans mur porteur avec IPN metallique, chantier en cours, etais visibles, photo realiste, ratio 3:2", imageKey: "maconnerie-ouvertures" },
-  "Réparations & rejointoiement": { prompt: "Artisan rejointoyant un mur en pierre naturelle, travail soigne a la truelle, detail des joints, photo realiste, ratio 3:2", imageKey: "maconnerie-murs-porteurs" },
+  "Réparations & rejointoiement": { prompt: "Artisan rejointoyant un mur en pierre naturelle, travail soigne a la truelle, detail des joints, photo realiste, ratio 3:2", imageKey: "maconnerie-reparations" },
 };
 
 const serviceLiesLinks: Record<string, string> = {
