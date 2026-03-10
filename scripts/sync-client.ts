@@ -240,13 +240,6 @@ function main() {
     .map((c) => `    { name: "${esc(c.name)}", postalCode: "${esc(c.postalCode)}" },`)
     .join("\n");
 
-  const servicesTs = services
-    .map(
-      (s) =>
-        `    { title: "${esc(s.title)}", shortDescription: "${esc(s.shortDescription)}", description: "${esc(s.description)}", icon: "${esc(s.icon)}", slug: "${esc(s.slug)}" },`
-    )
-    .join("\n");
-
   const testimonialsTs = testimonials
     .map(
       (t) =>
