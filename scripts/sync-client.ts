@@ -212,14 +212,7 @@ function main() {
     ? communesRaw.split("|").map(parseCommune)
     : [];
 
-  // Services (hardcoded — matching template routes)
-  const services = [
-    { title: "Maconnerie", shortDescription: "Gros oeuvre, murs porteurs, fondations et travaux structurels.", description: "Construction et reparation de murs porteurs, fondations, dalles beton, ouvertures de murs. Intervention sur parpaing, brique et pierre.", icon: "Brick", slug: "/maconnerie" },
-    { title: "Ravalement de facades", shortDescription: "Nettoyage, enduit, crepi et peinture de facades.", description: "Ravalement complet : nettoyage haute pression, traitement anti-mousse, enduit decoratif, crepi, peinture. ITE eligible MaPrimeRenov'.", icon: "PaintBucket", slug: "/ravalement-facades" },
-    { title: "Extension et surelevation", shortDescription: "Agrandissement de maison, surelevation de toiture, veranda.", description: "Extension en parpaing, ossature bois ou acier. Surelevation de toiture. Veranda et pergola. Permis de construire et suivi de chantier inclus.", icon: "ArrowUpFromLine", slug: "/extension-surelevation" },
-    { title: "Renovation interieure", shortDescription: "Demolition, cloisons, platrerie, carrelage et finitions.", description: "Renovation complete : demolition, cloisons, platrerie, carrelage, faience, peinture, menuiseries interieures. Un interlocuteur unique.", icon: "Hammer", slug: "/renovation-interieure" },
-    { title: "Amenagement exterieur", shortDescription: "Terrasses, clotures, allee et amenagement de jardin.", description: "Terrasses beton ou carrelees, clotures, portails, allees, murets, escaliers exterieurs. Amenagement complet de vos espaces exterieurs.", icon: "Trees", slug: "/amenagement-exterieur" },
-  ];
+  // Services are hardcoded in src/config/services.ts — not generated here
 
   // Testimonials
   const testimonials: ReturnType<typeof parseTestimonial>[] = [];
@@ -325,9 +318,7 @@ export const clientConfig = {
   communes: [
 ${communesTs}
   ],
-  services: [
-${servicesTs}
-  ],
+  services: [],
   testimonials: [
 ${testimonialsTs}
   ],
